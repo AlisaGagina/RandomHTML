@@ -1,0 +1,37 @@
+/* CSS files add styling rules to your content */
+.main {
+  display: flex;
+  justify-content: space-around;
+}
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+ 
+}
+
+h1 {
+  font-family: "Archivo Narrow", sans-serif;
+  font-weight: bold;
+  font-size: 60;
+  color: DarkSlateGrey;
+  text-align: justify;
+}
+
+div.backgroundimg {
+  opacity: 0.50;
+}
+
+img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 35vw;
+  height: auto;
+  margin: 3vh 0;
+
+}
+.left, .right{
+width: 80vw;
+
+}

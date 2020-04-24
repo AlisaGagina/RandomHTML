@@ -1,0 +1,335 @@
+<html>
+<head>
+  <title> Grade Grinder </title>
+  <div class = "backgroundimg">
+  <style>
+  body{ background-image: url("https://cdn.glitch.com/d67627dc-63da-47f7-8495-04c2cb5c70a4%2Fbackground%20(1).png?1543708676165");
+    }
+  </style>
+  </div>
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css" type = "text/css">
+</head>
+
+<body>
+<section> 
+  <div class = "left">
+<p>
+ 
+    
+  
+    <h1>Grade Grinder</h1>
+    <h3>Please enter your grades for each assignment, as well as the worth of each as a percentage:</h3>
+    <table border="2" cellspacing="2" cellpadding="2" bgcolor="#FFFFFF">
+
+    <tr>
+    <td>Type</td>
+    <td>Weight</td>
+    <td>Grade</td>
+    </tr>
+
+    <tr>
+    <td>Assignment1</td>  
+    <td><input type="text" id="worth1" value="0"></td>  
+    <td><input type="text" id="Assignment1" value = "0"></td>
+   
+    </tr>
+
+    <tr>
+    <td>Assignment2</td>
+    <td><input type="text" id="worth2" value="0"></td>
+    <td><input type="text" id="Assignment2" value="0"></td>   
+    </tr>
+
+    <tr>
+    <td>Assignment3</td>
+    <td><input type="text" id="worth3" value="0"></td>
+    <td><input type="text" id="Assignment3" value="0"></td>
+   
+    </tr>
+
+    <tr>
+    <td>Assignment4</td>
+    <td><input type="text" id="worth4" value ="0"></td>
+    <td><input type="text" id="Assignment4" value="0"></td>
+    </tr>
+      
+    <tr>
+    <td>Assignment5</td>
+    <td><input type="text" id="worth5" value ="0"></td>
+    <td><input type="text" id="Assignment5" value="0"></td>
+    </tr>
+      
+    <tr>
+    <td>Assignment6</td>
+    <td><input type="text" id="worth6" value ="0"></td>
+    <td><input type="text" id="Assignment6" value="0"></td>
+    </tr>
+      
+    <tr>
+    <td>Assignment7</td>
+    <td><input type="text" id="worth7" value ="0"></td>
+    <td><input type="text" id="Assignment7" value="0"></td>
+    </tr>
+      
+    <tr>
+    <td>Assignment8</td>
+    <td><input type="text" id="worth8" value ="0"></td>
+    <td><input type="text" id="Assignment8" value="0"></td>
+    </tr>
+      
+       <tr>
+    <td>Assignment9</td>
+    <td><input type="text" id="worth9" value ="0"></td>
+    <td><input type="text" id="Assignment9" value="0"></td>
+    </tr>
+      
+       <tr>
+    <td>Assignment10</td>
+    <td><input type="text" id="worth10" value ="0"></td>
+    <td><input type="text" id="Assignment10" value="0"></td>
+    </tr>
+
+  </table>
+  
+</p>
+    <input type="button" value="Calculate your grade" onclick="calculator()">
+
+    <hr>
+    <div id="outputDiv" style="height: 50px; width: 100%;"></div>
+
+    <script type="text/javascript">
+
+        function calculator()
+        {
+            
+             var worth1=parseFloat(document.getElementById("worth1").value);  
+            //var worth = parseFloat(document.getElementById('worth1').value)*1;
+            var grade1=parseFloat(document.getElementById("Assignment1").value * worth1);
+           var  worth2=parseFloat(document.getElementById("worth2").value); 
+            var grade2=parseFloat(document.getElementById("Assignment2").value * worth2);
+          
+          var worth3;
+          var grade3;
+          if (document.getElementById("worth3").value != null){
+          worth3=parseFloat(document.getElementById("worth3").value); 
+          grade3=parseFloat(document.getElementById("Assignment3").value* worth3);
+          }else{
+             worth3 = 0;
+            grade3 = 0;
+          }
+          
+          var worth4;
+          var grade4;
+          if (document.getElementById("worth4").value != null){
+
+              worth4=parseFloat(document.getElementById("worth4").value);          
+              grade4=parseFloat(document.getElementById("Assignment4").value* worth4);
+          }else{
+            worth4 = 0;
+            grade4 = 0;
+          }
+          
+           var worth5;
+          var grade5;
+          if (document.getElementById("worth5").value != null){
+          worth5=parseFloat(document.getElementById("worth5").value); 
+          grade5=parseFloat(document.getElementById("Assignment5").value* worth5);
+          }else{
+             worth5 = 0;
+            grade5 = 0;
+          }
+          
+           var worth6;
+          var grade6;
+          if (document.getElementById("worth6").value != null){
+          worth6=parseFloat(document.getElementById("worth6").value); 
+          grade6=parseFloat(document.getElementById("Assignment6").value* worth6);
+          }else{
+             worth6 = 0;
+            grade6 = 0;
+          }
+          
+           var worth7;
+          var grade7;
+          if (document.getElementById("worth7").value != null){
+          worth7=parseFloat(document.getElementById("worth7").value); 
+          grade7=parseFloat(document.getElementById("Assignment7").value* worth7);
+          }else{
+             worth7 = 0;
+            grade7 = 0;
+          }
+          
+          var worth8;
+          var grade8;
+          if (document.getElementById("worth8").value != null){
+          worth8=parseFloat(document.getElementById("worth8").value); 
+          grade8=parseFloat(document.getElementById("Assignment8").value* worth8);
+          }else{
+             worth8 = 0;
+            grade8 = 0;
+          }
+          var worth9;
+          var grade9;
+          if (document.getElementById("worth9").value != null){
+          worth9=parseFloat(document.getElementById("worth9").value); 
+          grade9=parseFloat(document.getElementById("Assignment9").value* worth9);
+          }else{
+             worth9 = 0;
+            grade9 = 0;
+          }
+          var worth10;
+          var grade10;
+          if (document.getElementById("worth10").value != null){
+          worth10=parseFloat(document.getElementById("worth10").value); 
+          grade10=parseFloat(document.getElementById("Assignment10").value* worth10);
+          }else{
+             worth10 = 0;
+            grade10 = 0;
+          }
+            var sum = worth1+worth2+worth3+worth4+worth5+worth6+worth7+worth8+worth9+worth10;
+              
+            
+         
+            var total=grade1+grade2+grade3+grade4+grade5+grade6+grade7+grade8+grade9+grade10;
+            total = total/sum;
+          
+          if (sum<100){
+          var weighted = (grade1/100 + grade2/100 + grade3/100 + grade4/100 + grade5/100 + grade6/100 + grade7/100 + grade8/100 + grade9/100 + grade10/100);
+          
+
+            var display=document.getElementById("outputDiv");
+
+            display.innerHTML="Your average grade is\: " +total +"\n       The combined weigth of these assignments is: " + sum;
+          
+          var aplus = (85 - weighted)/ ((100-sum)/100);
+            if (aplus <0){
+              document.getElementById("A+holder").innerHTML = "0";
+            }else{
+              document.getElementById("A+holder").innerHTML = aplus.toString();
+            }
+              var a = (80 - weighted)/ ((100-sum)/100);
+            if (a <0){
+              document.getElementById("Aholder").innerHTML = "0";
+            }else{
+          document.getElementById("Aholder").innerHTML = a.toString();}
+            
+           var bplus = (75 - weighted)/ ((100-sum)/100);
+            if (bplus <0){
+              document.getElementById("B+holder").innerHTML = "0";
+            }else{
+              document.getElementById("B+holder").innerHTML = bplus.toString();
+            }
+            var b = (70 - weighted)/ ((100-sum)/100);
+            if (b <0){
+              document.getElementById("Bholder").innerHTML = "0";
+            }else{document.getElementById("Bholder").innerHTML = b.toString();
+                 }
+            var bmin = (65 - weighted)/ ((100-sum)/100);
+          
+            if (bmin <0){
+               document.getElementById("B-holder").innerHTML = "0";
+            }else{
+            document.getElementById("B-holder").innerHTML = bmin.toString();
+            }
+            var cplus = (60 - weighted)/ ((100-sum)/100);
+             if (cplus <0){
+               document.getElementById("C+holder").innerHTML = "0";
+            }else{
+          document.getElementById("C+holder").innerHTML = cplus.toString();
+            }var c = (55 - weighted)/ ((100-sum)/100);
+           if (c <0){
+               document.getElementById("Cholder").innerHTML = "0";
+            }else{
+            document.getElementById("Cholder").innerHTML = c.toString();
+            }
+            var d = (50 - weighted)/ ((100-sum)/100);
+          if (d <0){
+               document.getElementById("Dholder").innerHTML = "0";
+            }else{
+            document.getElementById("Dholder").innerHTML = d.toString();
+            }
+          }else{
+            display.innerHTML="the combined weight of your assignments is too big: " + sum;
+          }
+        }
+          
+        
+  
+    </script>
+  <p>
+    <h3>These are the grades you need for the rest of the course:</h3>
+    <table border="2" cellspacing="1" cellpadding="1" bgcolor="#FFFFFF">
+
+    <tr>
+    <td>GPA</td>
+    <td>Percentage</td>
+    <td>Grade needed</td>
+    </tr>
+
+    <tr>
+    <td>4.0 (A)</td>  
+    <td>85% -100% </td>  
+    <td id="A+holder"></td>
+    </tr>
+
+    <tr>
+   <td>3.7 (A-)</td>  
+    <td>80% -84% </td>  
+    <td id="Aholder"></td> 
+    </tr>
+
+    <tr>
+    <td>3.3 (B+)</td>  
+    <td>75% -79% </td>  
+    <td id="B+holder"></td>   
+    </tr>
+
+    <tr>
+   <td>3.0 (B)</td>  
+    <td>70% -74% </td>  
+    <td id="Bholder"></td>
+    </tr>
+      
+       <tr>
+    <td>2.7 (B-)</td>  
+    <td>65% -69% </td>  
+    <td id="B-holder"></td>
+    </tr>
+
+    <tr>
+   <td>2.3 (C+)</td>  
+    <td>60% -64% </td>  
+    <td id="C+holder"></td> 
+    </tr>
+
+    <tr>
+    <td>2.0 (C)</td>  
+    <td>55% -59% </td>  
+    <td id="Cholder"></td>   
+    </tr>
+
+    <tr>
+   <td>1.0 (D)</td>  
+    <td>50% -55% </td>  
+    <td id="Dholder"></td>
+    </tr>
+     
+  </table> 
+  </p>
+  </div>
+  
+  <div class= "right">
+     <img src="https://cdn.glitch.com/d67627dc-63da-47f7-8495-04c2cb5c70a4%2FMartlet.svg.png?1543709071658" alt="martlet" align="right">
+  </div>
+ 
+  
+  
+  </section>
+  </body>
+
+  
+
+</html>
+
+
